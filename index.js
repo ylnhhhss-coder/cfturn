@@ -1,5 +1,5 @@
 import { connect } from 'cloudflare:sockets';
-const uuid = '5b75df69-62e0-4f8d-82f4-c4763c6a9ec3', maxED = 8192;
+const uuid = ' 'dd052c98-bd4a-4c04-a0a7-bfd2fa9f50', maxED = 8192;
 export default { fetch: req => req.headers.get('Upgrade') === 'websocket' ? ws(req) : new Response('ok') };
 const idB = Uint8Array.fromHex(uuid.replaceAll('-', '')), dec = new TextDecoder(), enc = s => new TextEncoder().encode(s);
 const u16 = (b, o = 0) => (b[o] << 8) | b[o + 1], pad4 = n => -n & 3;
